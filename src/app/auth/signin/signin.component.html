@@ -1,0 +1,33 @@
+<div class="flex justify-center items-center bg-slate-200 h-5/6">
+  <div class="bg-white p-5 text-center w-96 shadow-md">
+    <p class="text-2xl font-bold">Sign In</p>
+    <form (ngSubmit)="onSubmit()">
+      <div>
+        <input
+          class="px-4 py-2 border border-gray-500 rounded w-full my-2"
+          placeholder="email"
+          type="email"
+          [(ngModel)]="email"
+          name="email"
+        />
+      </div>
+      <div>
+        <input
+          class="px-4 py-2 border border-gray-500 rounded w-full my-2"
+          placeholder="password"
+          name="email"
+          [(ngModel)]="password"
+          type="password"
+        />
+      </div>
+      <div>
+        <button
+          class="bg-blue-500 text-white px-4 py-2 rounded w-full my-2 hover:bg-blue-400"
+          type="submit"
+        >
+          Sign In
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
